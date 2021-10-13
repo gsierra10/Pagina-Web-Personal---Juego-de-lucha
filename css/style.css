@@ -1,0 +1,7 @@
+.header{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+.h1{
+    order: 2;
+}
