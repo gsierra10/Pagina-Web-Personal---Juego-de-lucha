@@ -131,7 +131,7 @@ img{
 }
 .lenguajes .flex{
     flex-wrap: wrap;
-
+    flex: 1 1 auto;
 }
 .lenguajes .card{
     text-align: center;
