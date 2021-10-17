@@ -130,16 +130,31 @@ img{
     font-size: 2rem;
 }
 .lenguajes .flex{
-    flex-wrap: wrap;
-    flex: 1 1 auto;
+   display: flex;
+   flex-wrap: wrap;
 }
 .lenguajes .card{
     text-align: center;
     margin: 18px 10px 40px;
+    width: 125px;
+    height: 180px;
+    transition: transform 0.2s ease-in;
 }
 .lenguajes .card h4{
     font-size: 20px;
     margin-bottom: 10px;
+}
+.lenguajes .card:hover{
+    transform: translateY(-15px);
+}
+.textocentral-md{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 45px;
+}
+footer{
+    background: tomato;
+    color: white;
 }
 /* Utilidades */
 .container{
@@ -189,6 +204,31 @@ img{
 .grid-3{
     grid-template-columns: 1fr 1fr 1fr;
 }
-img{
-    background: none;
+
+/*Tablet*/
+
+@media(max-width: 768px){
+    .grid,
+    .showcase .grid,
+    .exp .grid,
+    .cloud-medio .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+        
+
+/*Movil*/
+
+@media(max-widht: 500px){
+    .navbar{
+        height: 110px;
+    }
+    .navbar .flex{
+        flex-direction: column;
+    }
+    .navbar ul{
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
 }
