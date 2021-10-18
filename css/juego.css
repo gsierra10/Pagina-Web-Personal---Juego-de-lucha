@@ -4,7 +4,9 @@
     justify-content: center;
     align-items: flex-start;
 }
-
+#players{
+    display: flex;
+}
 
 #jugador{
      margin: 40px;
@@ -32,7 +34,7 @@ img{
     padding: 10px 35px;
     font-weight: bold;
 }
-.button-style:hover{
+.button-style:hover:enabled{
     background-color: black;
     color: white;
 }
