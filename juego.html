@@ -11,7 +11,7 @@
     <div class="container">
         <div class="top-row">
             <div id="player1-vida" class="vida">
-                <span class="vida-label">Vida de Player 1</span><br>
+                <span class="vida-label1 vida-label" ></span><br>
                 <div class="hp-border">
                     <div class="player1-hp" id="hp-bar"></div>
                 </div>
@@ -20,14 +20,22 @@
                 <button onclick="ataque1()" class="button-style">ATAQUE</button>
                 </p>
             </div>
-            <div class="player1" id="jugador">
-                <img src="images/mario.png" alt="Mario Bros">
-            </div>
-            <div class="player2" id="jugador">
-                <img src="images/wario.png" alt="Wario Vros">
+            <div id="players">
+                <div class="Mario" onclick="selectPlayer(this)">
+                    <img src="images/mario.png" alt="Mario Bros">
+                </div>
+                <div class="Wario" onclick="selectPlayer(this)">
+                    <img src="images/wario.png" alt="Wario Vros">
+                </div>
+                <div class="Waluigi" onclick="selectPlayer(this)">
+                    <img src="images/waluigi.png" alt="Waluigi Vros">
+                </div>
+                <div class="Luigi" onclick="selectPlayer(this)">
+                    <img src="images/luigi.png" alt="Luigi Bros">
+                </div>
             </div>
             <div id="player2-vida" class="vida">
-                <span class="vida-label">Vida de Player 2</span><br>
+                <span class="vida-label2 vida-label"></span><br>
                 <div class="hp-border">
                     <div class="player2-hp" id="hp-bar"></div>
                 </div>
@@ -39,8 +47,8 @@
         </div>
         <div id="bottom-row" style="text-align:center">
             <h1>¡Bienvenido a la Arena de Batalla!</h1>
-            <p>Eres el Player 1 y te enfrentaras al Player 2 </p>
-            <button onclick="start()" class="button-style">Empieza la Partida</button>
+            <p></p>
+            <button onclick="start()" class="button-style start-button" disabled>Empieza la Partida</button>
         </div>
     </div>
     <script src="juego.js">
