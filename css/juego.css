@@ -1,0 +1,13 @@
+header{
+    text-align: center;
+}
+button{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+p{
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
