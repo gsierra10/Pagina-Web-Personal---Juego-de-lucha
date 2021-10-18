@@ -10,14 +10,33 @@
 <body>
     <div class="container">
         <div class="top-row">
-            <div class="player1">
+            <div class="player1-vida" id="vida">
+                <span class="vida-label">Vida de Player 1</span><br>
+                <div class="hp-border">
+                    <div class="player1-hp" id="hp-bar"></div>
+                </div>
+                <p>
+                <span class="vida-label">Ataques</span><br>
+                <button onclick="ataque1()">ATAQUE</button>
+                </p>
+            </div>
+            <div class="player1" id="jugador">
                 <img src="images/mario.png" alt="Mario Bros">
             </div>
-            <div class="player2">
+            <div class="player2" id="jugador">
                 <img src="images/wario.png" alt="Wario Vros">
             </div>
+            <div class="player2-vida" id="vida">
+                <span class="vida-label">Vida de Player 2</span><br>
+                <div class="hp-border">
+                    <div class="player2-hp" id="hp-bar"></div>
+                </div>
+            </div>
         </div>
-        <div class="bottom-row"></div>
+        <div class="bottom-row">
+            <h1>¡Bienvenido a la Arena de Batalla!</h1>
+            <p>Eres el Player 1 y te enfrentaras al Player 2 </p>
+        </div>
     </div>
     <script src="juego.js">
     </script>

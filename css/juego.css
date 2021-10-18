@@ -1,13 +1,62 @@
-header{
-    text-align: center;
-}
-button{
+.top-row{
     display: flex;
-    align-items: center;
-    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
 }
-p{
-    text-align: center;
-    font-size: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.player1{
+    
+}
+
+.player2{
+   
+}
+
+#jugador{
+     margin: 40px;
+}
+img{
+    width: 300px;
+    height: 300px;
+}
+.botton-row{
+    padding: 20px;
+    font: 20px Arial; 
+}
+#vida{
+     width: 320px ;
+
+     height: 400px;
+}
+#vida button{
+    background-color: white;
+    border: 5px solid;
+    border-color: black;
+    font: 10pt Arial;
+    border-radius: 20px;
+    padding: 10px 35px;
+    font-weight: bold;
+}
+#vida button:hover{
+    background-color: black;
+    color: white;
+}
+.vida-label{
+    font: 18pt Arial;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.hp-border{
+    width: 295px;
+    height: 30px;
+    border: 2.5px solid;
+    border-color: black;
+}
+
+#hp-bar{
+    width: 295px;
+    height: 30px;
+    background-color: green;
 }
