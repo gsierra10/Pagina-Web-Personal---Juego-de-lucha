@@ -6,6 +6,7 @@ var vida = document.getElementsByClassName('vida');
 var player1 = document.getElementById('player1-vida');
 var player1Hp = document.getElementsByClassName('player1-hp');
 var player2Hp = document.getElementsByClassName('player2-hp');
+var gameOver = document.getElementById('game-over'); 
 
 //Variables de vida//
 var playerHp = 100;
@@ -35,5 +36,26 @@ function ataque1(){
     }
     if(secondPlayerHp == 0){
         bottomRow.innerHTML += "<br>¡DERROTASTE A TU ENEMIGO!. ¡GAME OVER!"
+        gameOver.style.visibility = "hidden"
+    }
+}
+
+function ataque2(){
+    var hitChance = Math.round(Math.random()*10);
+    if (hitChance <=7){
+        var dmg = Math.round(Math.random()*10)+10; 
+        playerHp -= dmg;
+        if(playerHp < 0){
+            playerHp = 0;
+        }
+        bottomRow.innerHTML = "Le has quitado al enemigo " + dmg + " de daño. Al Player 1 le queda " + playerHp + " de vida";
+        var PlayerBarHp = (playerHp/100)*295;
+        player1Hp[0].style.width = PlayerBarHp + "px";
+    } else{
+        bottomRow.innerHTML = "Tu ataque ha fallado";
+    }
+    if(playerHp == 0){
+        bottomRow.innerHTML += "<br>¡DERROTASTE A TU ENEMIGO!. ¡GAME OVER!"
+        gameOver.style.visibility = "hidden"
     }
 }
