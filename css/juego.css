@@ -5,13 +5,6 @@
     align-items: flex-start;
 }
 
-.player1{
-    
-}
-
-.player2{
-   
-}
 
 #jugador{
      margin: 40px;
@@ -20,16 +13,17 @@ img{
     width: 300px;
     height: 300px;
 }
-.botton-row{
+#botton-row{
     padding: 20px;
     font: 20px Arial; 
+    text-align: center;
 }
-#vida{
+.vida{
      width: 320px ;
-
      height: 400px;
+     visibility: hidden;
 }
-#vida button{
+.button-style{
     background-color: white;
     border: 5px solid;
     border-color: black;
@@ -38,7 +32,7 @@ img{
     padding: 10px 35px;
     font-weight: bold;
 }
-#vida button:hover{
+.button-style:hover{
     background-color: black;
     color: white;
 }
