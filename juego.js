@@ -35,7 +35,7 @@ function ataque1(){
         bottomRow.innerHTML = "Tu ataque ha fallado";
     }
     if(secondPlayerHp == 0){
-        bottomRow.innerHTML += "<br>¡DERROTASTE A TU ENEMIGO!. ¡GAME OVER!"
+        bottomRow.innerHTML += "<br>¡DERROTASTE A TU ENEMIGO!. ¡GAME OVER!<br><button onclick='restartGame()'>¿Jugar de nuevo?</button>"
         gameOver.style.visibility = "hidden"
     }
 }
@@ -55,7 +55,18 @@ function ataque2(){
         bottomRow.innerHTML = "Tu ataque ha fallado";
     }
     if(playerHp == 0){
-        bottomRow.innerHTML += "<br>¡DERROTASTE A TU ENEMIGO!. ¡GAME OVER!"
+        bottomRow.innerHTML += "<br>¡DERROTASTE A TU ENEMIGO!. ¡GAME OVER!<br><button onclick='restartGame()'>¿Jugar de nuevo?</button>"
         gameOver.style.visibility = "hidden"
     }
+}
+
+function restartGame(){
+    playerHp = 100;
+    secondPlayerHp = 100;
+    var PlayerBarHp = (playerHp/100)*295;
+        player1Hp[0].style.width = PlayerBarHp + "px";
+    var secondPlayerBarHp = (secondPlayerHp/100)*295;
+        player2Hp[0].style.width = secondPlayerBarHp + "px";
+    gameOver.style.visibility = "visible";
+    start();
 }
