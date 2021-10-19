@@ -36,7 +36,6 @@ function selectPlayer(x){
     }
     }
 
-
 function start(){
     bottomRow.innerHTML = "Presiona ATAQUE para quitar daño al enemigo.";
     for(let x=0; x<vida.length; x++){

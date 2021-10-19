@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: flex-start;
 }
+
 #players{
     display: flex;
 }
@@ -11,20 +12,24 @@
 #jugador{
      margin: 40px;
 }
+
 img{
     width: 300px;
     height: 300px;
 }
+
 #botton-row{
     padding: 20px;
     font: 20px Arial; 
     text-align: center;
 }
+
 .vida{
      width: 320px ;
      height: 400px;
      visibility: hidden;
 }
+
 .button-style{
     background-color: white;
     border: 5px solid;
@@ -34,10 +39,12 @@ img{
     padding: 10px 35px;
     font-weight: bold;
 }
+
 .button-style:hover:enabled{
     background-color: black;
     color: white;
 }
+
 .vida-label{
     font: 18pt Arial;
     font-weight: bold;
